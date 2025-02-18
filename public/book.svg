@@ -1,0 +1,41 @@
+<svg
+  width="100"
+  height="100"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+>
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="45" fill="black" stroke="gold" stroke-width="3" />
+
+  <!-- Open Book -->
+  <path
+    d="M20 30 Q50 10, 80 30 V80 Q50 90, 20 80 Z"
+    fill="white"
+    stroke="gold"
+    stroke-width="2"
+  />
+  <path
+    d="M25 32 Q50 14, 75 32 V78 Q50 86, 25 78 Z"
+    fill="#EEE"
+    stroke="gold"
+    stroke-width="1.5"
+  />
+
+  <!-- Center Binding -->
+  <line x1="50" y1="14" x2="50" y2="86" stroke="gold" stroke-width="2" />
+
+  <!-- Pages (Curved Lines for Depth) -->
+  <path d="M32 35 Q50 22, 68 35" stroke="gold" stroke-width="1" />
+  <path d="M32 45 Q50 30, 68 45" stroke="gold" stroke-width="1" />
+  <path d="M32 55 Q50 40, 68 55" stroke="gold" stroke-width="1" />
+
+  <!-- Floating Magic Symbols -->
+  <circle cx="20" cy="40" r="2" fill="gold" />
+  <circle cx="80" cy="60" r="2" fill="gold" />
+  <circle cx="60" cy="20" r="2" fill="gold" />
+  <circle cx="40" cy="80" r="2" fill="gold" />
+
+  <!-- Sparkles -->
+  <polygon points="50,10 53,18 60,20 53,22 50,30 47,22 40,20 47,18" fill="gold" />
+</svg>

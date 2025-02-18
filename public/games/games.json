@@ -1,0 +1,9 @@
+{
+  "games": [
+    {
+      "id": "awesome_game",
+      "name": "Awesome Game!",
+      "description": "This is an awesome game created by ChatGPT! Check it out!"
+    }
+  ]
+}

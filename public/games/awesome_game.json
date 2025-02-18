@@ -1,0 +1,57 @@
+{
+  "start": {
+    "text": "You wake up in a dark forest. The trees tower over you, and the air is thick with mist. You hear rustling nearby. What do you do?",
+    "choices": [
+      {
+        "text": "Follow the sound.",
+        "next": "dark_path"
+      },
+      {
+        "text": "Stay where you are.",
+        "next": "stay_put"
+      }
+    ]
+  },
+  "dark_path": {
+    "text": "You step cautiously toward the sound. Suddenly, a shadow darts between the trees. You freeze.",
+    "choices": [
+      {
+        "text": "Call out to the shadow.",
+        "next": "shadow_response"
+      },
+      {
+        "text": "Run in the opposite direction.",
+        "next": "run_away"
+      }
+    ]
+  },
+  "stay_put": {
+    "text": "You decide to stay put. The rustling grows louder, and a pair of glowing eyes peer at you from the darkness.",
+    "choices": [
+      {
+        "text": "Stand your ground.",
+        "next": "stand_ground"
+      },
+      {
+        "text": "Try to hide.",
+        "next": "hide"
+      }
+    ]
+  },
+  "shadow_response": {
+    "text": "A voice whispers back, 'Who goes there?' You realize you're not alone.",
+    "choices": []
+  },
+  "run_away": {
+    "text": "You dash through the forest, branches clawing at your clothes. You stumble and fall.",
+    "choices": []
+  },
+  "stand_ground": {
+    "text": "The eyes inch closer, and you realize it's a lost traveler, just like you.",
+    "choices": []
+  },
+  "hide": {
+    "text": "You crouch behind a fallen tree, holding your breath. The glowing eyes disappear into the mist.",
+    "choices": []
+  }
+}
