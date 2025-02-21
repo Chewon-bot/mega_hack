@@ -4,6 +4,11 @@
       "id": "awesome_game",
       "name": "Awesome Game!",
       "description": "This is an awesome game created by ChatGPT! Check it out!"
+    },
+    {
+      "id": "the_dog_and_the_shadow",
+      "name": "The Dog and the Shadow",
+      "description": "Cool description goes here!"
     }
   ]
 }
