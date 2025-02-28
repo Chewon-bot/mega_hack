@@ -1,0 +1,124 @@
+{
+    "start":{
+       "text":"The Rise of Darius the Great - 522 BC. You are Oebares, servant to Darius. After a rebellion against the mad ruler Cambyses II, seven candidates, including Darius, compete to become the next king. The decision will be made by a unique contest: the candidate whose horse neighs first at sunrise will be crowned king. As Oebares, you must ensure Darius's victory.",
+       "choices":[
+          {
+             "text":"Begin the story.",
+             "next":"dariusRequest"
+          }
+       ]
+    },
+    "dariusRequest":{
+       "text":"Darius speaks to you, Oebares: \"In the matter of the kingship, we are resolved that he shall be king whose horse, when we are all mounted, shall first neigh at sunrise. Now do you devise by whatever cunning you can that we and none other may win this prize.\"",
+       "choices":[
+          {
+             "text":"\"Master,\" you answer, \"if this is to determine whether you be king or not, you have no cause to fear; be of good courage; no man but you shall be king; trust my arts for that.\"",
+             "next":"dariusApproves"
+          },
+          {
+             "text":"\"Master, I will do my best, but this is a difficult task.\"",
+             "next":"dariusDoubtful"
+          }
+       ]
+    },
+    "dariusApproves":{
+       "text":"Darius nods approvingly. \"Then,\" he says, \"if you have any trick such as you say, set about it without delay, for tomorrow is the day of decision.\"",
+       "choices":[
+          {
+             "text":"Go to the stables to prepare.",
+             "next":"stables"
+          }
+       ]
+    },
+    "dariusDoubtful":{
+       "text":"Darius frowns. \"I need more than your best, Oebares. I need certainty. Think again.\"",
+       "choices":[
+          {
+             "text":"Reassure Darius with a confident plan.",
+             "next":"dariusApproves"
+          },
+          {
+             "text":"Admit you have no plan and risk failure.",
+             "next":"failure"
+          }
+       ]
+    },
+    "stables":{
+       "text":"You arrive at the stables. Darius's stallion is restless, and the other candidates' horses are nearby. You must decide how to ensure Darius's horse neighs first at sunrise.",
+       "choices":[
+          {
+             "text":"Bring a mare that Darius's stallion favors and tether her nearby. At night, lead the stallion to her and let nature take its course.",
+             "next":"marePlan"
+          },
+          {
+             "text":"Use a more subtle trick: touch the mare and keep your hand hidden. At sunrise, hold your hand to the stallion's nostrils to make him neigh.",
+             "next":"subtlePlan"
+          },
+          {
+             "text":"Use a tincture on the other horses to make them lethargic so they won't neigh.",
+             "next":"tincturePlan"
+          }
+       ]
+    },
+    "marePlan":{
+       "text":"At nightfall, you bring a mare that Darius's stallion favors and tether her in the suburb. You lead the stallion to her, and he becomes excited. At sunrise, as the candidates ride out, the stallion trots to the mare and neighs loudly. Lightning and thunder erupt from a clear sky, sealing Darius's victory.",
+       "choices":[
+          {
+             "text":"Celebrate Darius's triumph!",
+             "next":"victoryMare"
+          }
+       ]
+    },
+    "subtlePlan":{
+       "text":"You touch the mare and keep your hand hidden in your breeches. At sunrise, as the candidates prepare to release their horses, you hold your hand to the stallion's nostrils. He snorts and whinnies, ensuring Darius's victory.",
+       "choices":[
+          {
+             "text":"Celebrate Darius's triumph!",
+             "next":"victorySubtle"
+          }
+       ]
+    },
+    "tincturePlan":{
+       "text":"You prepare a tincture to make the other horses lethargic. Under cover of night, you administer it to their feed. However, the tincture is too strong, and in the morning, the horses are immobile. Your sabotage is discovered.",
+       "choices":[
+          {
+             "text":"Try to explain yourself.",
+             "next":"tinctureFailureExplain"
+          },
+          {
+             "text":"Flee the stables.",
+             "next":"tinctureFailureFlee"
+          }
+       ]
+    },
+    "tinctureFailureExplain":{
+       "text":"You attempt to explain your actions, but the other candidates are furious. Darius is disgraced by your sabotage, and he will never be king. You are imprisoned and live out your days in a dark dungeon.",
+       "choices":[
+          
+       ]
+    },
+    "tinctureFailureFlee":{
+       "text":"You flee the stables, narrowly escaping capture. However, the other candidates grow suspicious, and Darius's horse remains silent at sunrise. You live out the rest of your days in exile, dressed in rags, and begging for your next meal.",
+       "choices":[
+          
+       ]
+    },
+    "victoryMare":{
+       "text":"Darius's stallion neighs first, and the other candidates acknowledge his victory. The lightning and thunder are seen as divine signs, and Darius is crowned king. You are celebrated for your cleverness.",
+       "choices":[
+          
+       ]
+    },
+    "victorySubtle":{
+       "text":"Darius's stallion neighs first, and the other candidates bow to him in recognition. Darius is crowned king, and your subtle trick ensures his rise to power.",
+       "choices":[
+          
+       ]
+    },
+    "failure":{
+       "text":"Without a plan, Darius's horse remains silent at sunrise. Another candidate's horse neighs first, and Darius loses his chance to become king. You reflect on what could have been.",
+       "choices":[
+          
+       ]
+    }
+ }
