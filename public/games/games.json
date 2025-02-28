@@ -9,6 +9,11 @@
       "id": "the_dog_and_the_shadow",
       "name": "The Dog and the Shadow",
       "description": "Cool description goes here!"
+    },
+    {
+      "id": "the_rise_of_darius_the_great",
+      "name": "The Rise of Darius the Great",
+      "description": "Cool description goes here!"
     }
   ]
 }
