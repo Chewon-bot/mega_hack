@@ -1,0 +1,39 @@
+{
+  "start": {
+    "text": "Amasis finds himself in quite a bind. Amasis is sorely afraid of the power of Persia. At the same time, he knows full well that Cambyses would make her not his queen but his mistress. As such he finds he can neither give his daughter nor deny her. What is Amasis to do?",
+    "choices": [
+      {
+        "text": "Refuse to give up his daughter to Cambyses and face whatever wrath may come",
+        "next": "holdout_choice"
+      },
+      {
+        "text": "Submit to the request and send his daughter off to Persia to be married to Cambyses",
+        "next": "submission_choice"
+      },
+      {
+        "text": "Find a stand-in to disguise as his daughter and attempt to fool Cambyses",
+        "next": "optimal_choice"
+      },
+      {
+        "text": "Have the herald killed and his head returned to Cambyses",
+        "next": "bold_choice"
+      }
+    ]
+  },
+  "holdout_choice": {
+    "text": "Stay tuned for dialogue",
+    "choices": []
+  },
+  "submission_choice": {
+    "text": "Stay tuned for dialogue",
+    "choices": []
+  },
+  "optimal_choice": {
+    "text": "Reasoning that he could neither send his daughter nor refuse Cambyses, Amasis bethought himself of a very tall and fair damsel called Nitetis, daughter of the former king Apries, and all that was left of that family. He decked her out with raiment and golden ornaments and sent her to the Persians as if she were his own daughter.",
+    "choices": []
+  },
+  "bold_choice": {
+    "text": "Stay tuned for dialogue",
+    "choices": []
+  }
+}
