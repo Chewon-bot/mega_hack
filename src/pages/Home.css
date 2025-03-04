@@ -43,9 +43,11 @@ body {
   margin: auto;
   padding: 40px 20px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.85);
+  background: #A69B8D;
+  /* rgba(0, 0, 0, 0.85); */
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px #8C8379;
+  /* rgba(0, 0, 0, 0.3); */
 }
 
 .home-title {
@@ -53,8 +55,10 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
   /* color: white; */
-  color: #eae4e9;
-  text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.7);
+  color: #262118;
+  /* #eae4e9; */
+  text-shadow: 2px 2px 10px #A68358;
+  /* rgba(255, 204, 0, 0.7); */
 }
 
 
@@ -73,13 +77,16 @@ body {
 .game-link {
   display: block;
   padding: 18px;
-  background: linear-gradient(135deg, #1a1a1a, #333);
-  color: white;
+  background: linear-gradient(135deg, #260f01, #593F27);
+  /* linear-gradient(135deg, #1a1a1a, #333); */
+  color: #A69B8D;
+  /* white; */
   border-radius: 12px;
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px #8C8379;
+  /* rgba(0, 0, 0, 0.3); */
   transition: 0.3s ease-in-out;
 }
 
@@ -91,11 +98,13 @@ body {
 
 .game-link h2 {
   margin: 0;
-  color: #ffcc00;
+  color: #a68358;
+  /* #ffcc00; */
 }
 
 .game-link p {
   margin: 8px 0 0;
   font-size: 0.9em;
-  color: #ddd;
+  color: #A69B8D;
+  /* #ddd; */
 }
