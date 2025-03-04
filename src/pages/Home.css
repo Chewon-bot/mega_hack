@@ -58,12 +58,12 @@ body {
   font-size: 3.2em;
   /* 2.8em; */
   margin-bottom: 20px;
-  font-weight: bolder
-    /* bold; */
-    /* color: white; */
-    color: #262118;
+  font-weight: bolder;
+  /* bold; */
+  /* color: white; */
+  color: #262118;
   /* #eae4e9; */
-  text-shadow: 2px 2px 10px #A68358;
+  text-shadow: 2px 2px 10px #a6835883;
   /* #A68358; */
   /* rgba(255, 204, 0, 0.7); */
 }
