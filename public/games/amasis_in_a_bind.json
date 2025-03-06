@@ -62,11 +62,15 @@
   },
   "invade_egypt": {
     "text": "It was these words and this reason which sparked in Cambyses such great anger as to compel him to invade Egypt.",
-    "cohoices": [
+    "choices": [
       {
-      "text": "Proceed",
-      "next": "egypt_invasion"
+        "text": "Proceed",
+        "next": "egypt_invasion"
       }
     ]
+  },
+  "egypt_invasion": {
+    "text": "stay tuned",
+    "choices": []
   }
 }
