@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { useLocation, useParams, useNavigate } from 'react-router-dom'
 import './Game.css'
 
 const Game = () => {
@@ -8,6 +8,7 @@ const Game = () => {
   const [currentNode, setCurrentNode] = useState(null)
   const [history, setHistory] = useState([])
   const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const loadGame = async () => {
@@ -49,7 +50,12 @@ const Game = () => {
 
   return (
     <div className="game-container">
-      <h2 className="game-title">{location.state.gameName || 'Text-Based Adventure'}</h2>
+      <div className="title-container">
+        <h2 className="game-title">{location.state.gameName || 'Text-Based Adventure'}</h2>
+        <button className="back_button" onClick={() => navigate('/')}>
+          Back to Top
+        </button>
+      </div>
       <p className="game-text">{currentNode.text}</p>
       {currentNode.choices.length > 0 ? (
         <ul className="choice-list">
