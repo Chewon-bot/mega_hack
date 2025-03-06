@@ -1,6 +1,15 @@
 {
   "start": {
-    "text": "Amasis finds himself in quite a bind. Amasis is sorely afraid of the power of Persia. At the same time, he knows full well that Cambyses would make her not his queen but his mistress. As such he finds he can neither give his daughter nor deny her. What is Amasis to do?",
+    "text": "Amasis finds himself in quite a bind. Amasis is sorely afraid of the power of Persia. At the same time, he knows full well that Cambyses would make her not his queen but his mistress. As such he finds he can neither give his daughter nor deny her.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next"
+      }
+    ]
+  },
+  "next": {
+    "text": "What is Amasis to do?",
     "choices": [
       {
         "text": "Refuse to give up his daughter to Cambyses and face whatever wrath may come",
