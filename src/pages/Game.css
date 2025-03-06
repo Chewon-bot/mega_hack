@@ -110,6 +110,11 @@ body {
   /* #eee; */
 }
 
+
+.game-text::first-letter {
+  font-size: 1.65em;
+}
+
 .choice-list {
   list-style: none;
   padding: 0;
