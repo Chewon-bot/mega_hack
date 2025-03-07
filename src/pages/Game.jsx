@@ -53,7 +53,7 @@ const Game = () => {
       <div className="title-container">
         <h2 className="game-title">{location.state.gameName || 'Text-Based Adventure'}</h2>
         <button className="back_button" onClick={() => navigate('/')}>
-          Back to Top
+          Home
         </button>
       </div>
       <p className="game-text">{currentNode.text}</p>
