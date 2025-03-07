@@ -1,158 +1,151 @@
 {
-  "start":{
-     "text":"Enraged at Amasis's deception in sending Nitetis, daughter of the former king Apries, disguised as his own daughter, Cambyses II now resolves to invade Egypt. However, to get to Egypt, the last leg of which involves crossing the Sinai Desert, where water is most scarce, alongside other hardships.",
-     "choices":[
-        {
-           "text":"Next",
-           "next":"next_a"
-        }
+   "start": {
+     "text": "Enraged at Amasis's deception in sending Nitetis, daughter of the former king Apries--disguised as Amasis' own daughter--Cambyses II now resolves to invade Egypt. However, to get to Egypt, the Persian army must embark on a difficult journey, which includes crossing the Sinai desert.",
+     "choices": [
+       {
+         "text": "Next",
+         "next": "next_a"
+       }
      ]
-  },
-  "next_a":{
-     "text":"Having reached the edge of the Sinai Desert, what is Cambyses to do?",
-     "choices":[
-        {
-           "text":"Considering the urgency of the situation and the dangers of delay, Cambyses shall proceed in due haste, while his provisions are still ample.",
-           "next":"thirsty_choice"
-        },
-        {
-           "text":"Cambyses shall pause at the desert's edge, but only for so long as it will take to ensure he has obtained as much provisions as his men and animals can carry",
-           "next":"provision_choice"
-        },
-        {
-           "text":"Cambyses shall not proceed without a solid plan. He shall therefore make camp and call a counsel of his advisors",
-           "next":"optimal_council"
-        }
+   },
+   "next_a": {
+     "text": "Having reached the edge of the Sinai Desert, what is Cambyses to do?",
+     "choices": [
+       {
+         "text": "Considering the urgency of the situation and the dangers of delay, Cambyses shall proceed in due haste, while his provisions are still ample.",
+         "next": "thirsty_choice"
+       },
+       {
+         "text": "Cambyses shall pause at the desert's edge, but only for so long as it will take to ensure he has obtained as much provisions as his men and animals can carry",
+         "next": "provision_choice"
+       },
+       {
+         "text": "Cambyses shall not proceed without a solid plan. He shall therefore make camp and call a counsel of his advisors",
+         "next": "optimal_council"
+       }
      ]
-  },
-  "optimal_council":{
-     "text":"There was one interesting character, by the name of Phanes, lingering at the vicinity where Cambyses' called the meeting of his advisory council. This man, Phanes, was a Greek mercenary who had come from Egypt claiming to be harboring a personal grudge against Amasis. Her further claims to know a way for the army to cross the desert. Is Cambyses to stake the fate of his army on the advice of this new arrival from Egypt?",
-     "choices":[
-        {
-           "text":"Hear Phanes out: His familiarity wih the desert could prove useful",
-           "next":"phanes_optimal"
-        },
-        {
-           "text":"Turn Phanes away: Phanes' loyalty is questionable. It would be wiser not to trust him.",
-           "next":"track_b"
-        }
+   },
+   "optimal_council": {
+     "text": "There was one interesting character, by the name of Phanes, lingering at the vicinity where Cambyses' called the meeting of his advisory council. This man, Phanes, was a Greek mercenary who had come from Egypt claiming to be harboring a personal grudge against Amasis. He further claims to know a way for the army to cross the desert. Is Cambyses to stake the fate of his army on the advice of this unknown new arrival from Egypt?",
+     "choices": [
+       {
+         "text": "Hear Phanes out: His familiarity wih the desert could be useful",
+         "next": "phanes_optimal"
+       },
+       {
+         "text": "Turn Phanes away: Phanes' loyalty is questionable. It would be wiser not to trust him.",
+         "next": "track_b"
+       }
      ]
-  },
-  "phanes_optimal":{
-     "text":"Phanes advises Cambyses to seek safe passage from the Arabians tribes who occupy the region. This is a risky idea, as it means trusting these tribes with the fate of his entire army. And what of Phanes? Are his motives pure?",
-     "next":"next_b"
-  },
-  "next_b":{
-     "text":"How shall Cambyses proceed given the critical supply needs for surviving the desert? Shall he trust the word of the Arabian king? Or choose a different path?",
-     "choices":[
-        {
-           "text":"Cambyses shall trust the Arabian king to secure the provision of water for his army",
-           "next":"optimal_arabians"
-        },
-        {
-           "text":"Cambyses shall send scouts ahead of his army to scourer the land for any oases, streams, or other natural freshwater sources.",
-           "next":"oasis_choice"
-        },
-        {
-           "text":"Cambyses shall proceed onward into the desert, but shall proceed slowly, stopping to dig wells along the way",
-           "next":"well_choice"
-        }
+   },
+   "phanes_optimal": {
+     "text": "Phanes advises Cambyses to seek safe passage from the Arabians tribes who occupy the region. This is a risky idea, as it means trusting these tribes with the fate of his entire army. And what of Phanes? Are his motives pure?",
+     "choices": [
+       {
+         "text": "Proceed",
+         "next": "next_b"
+       }
      ]
-  },
-  "oasis_choice":{
-     "text":"The scouting parties venture forth into the scorching desert, with orders to return once they have discovered sufficient sources of water for the army. Unfortunately for Cambyses and his expedition to egypt, their efforts are mostly in vain and few so much as make it back alive.",
-     "choices":[
-        
+   },
+   "next_b": {
+     "text": "How shall Cambyses proceed given the critical supply needs for surviving the desert? Shall he trust the word of the Arabian king? Or choose a different path?",
+     "choices": [
+       {
+         "text": "Cambyses shall trust the Arabian king to secure the provision of water for his army",
+         "next": "optimal_arabians"
+       },
+       {
+         "text": "Cambyses shall send scouts ahead of his army to scourer the land for any oases, streams, or other natural freshwater sources.",
+         "next": "oasis_choice"
+       },
+       {
+         "text": "Cambyses shall proceed onward into the desert, but shall proceed slowly, stopping to dig wells along the way",
+         "next": "well_choice"
+       }
      ]
-  },
-  "well_choice":{
-     "text":"Cambyses' soldiers are well disciplined and highly motivated, and they take to labors of excavating wells in the desert with utmost vigor and enthusiasm. However, the Sinai desert is particularly dry and the going is tough. To worsen matters, his scouting parties are continually harrassed by Arabian tribesmen. In the end, he must abandon his project and return to Persia.",
-     "choices":[
-        
+   },
+   "oasis_choice": {
+     "text": "The scouting parties venture forth into the scorching desert, with orders to return once they have discovered sufficient sources of water for the army. Unfortunately for Cambyses and his expedition to egypt, their efforts are mostly in vain and few so much as make it back alive.",
+     "choices": []
+   },
+   "well_choice": {
+     "text": "Cambyses' soldiers are well disciplined and highly motivated, and they take to labors of excavating wells in the desert with utmost vigor and enthusiasm. However, the Sinai desert is particularly dry and the going is tough. To worsen matters, his scouting parties are continually harrassed by Arabian tribesmen. In the end, he must abandon his project and return to Persia.",
+     "choices": []
+   },
+   "optimal_arabians": {
+     "text": "Now, there are no men who respect pledges more than the Arabians. Still, supplying enough water for the Persian army was nevetheless a uniquely challenging task. So just how was the Arabian king to achieve this objective?",
+     "choices": [
+       {
+         "text": "Proceed",
+         "next": "next_c"
+       }
      ]
-  },
-  "optimal_arabians":{
-     "text":"Now, there are no men who respect pledges more than the Arabians. Still, supplying enough water for the Persian army was nevetheless a uniquely challenging task. So just how was the Arabian king to achieve this objective?",
-     "choices":[
-        {
-           "text":"Proceed",
-           "next":"next_c"
-        }
+   },
+   "next_c": {
+     "text": "Now, consider the task of the Arabian king. Just how do you suppose he might supply the water, and thereby fulfill his pledge to Cambyses?",
+     "choices": [
+       {
+         "text": "He shall fill camel-skin water bags and load these onto camels.",
+         "next": "optimal_camels"
+       },
+       {
+         "text": "He shall collect clay jars of the sort used for transporting wine throughout the region. He shall then fill these with water and store them in the desert.",
+         "next": "jar_choice"
+       },
+       {
+         "text": "He shall construct pipes from sewn animal hides to carry water to pits dug in the desert sands",
+         "next": "optimal_pipes"
+       }
      ]
-  },
-  "next_c":{
-     "text":"Now, consider the task of the Arabian king. Just how do you suppose he might supply the water, and thereby fulfill his pledge to Cambyses?",
-     "choices":[
-        {
-           "text":"He shall fill camel-skin water bags and load these onto camels.",
-           "next":"optimal_camels"
-        },
-        {
-           "text":"He shall collect clay jars of the sort used for transporting wine throughout the region. He shall then fill these with water and store them in the desert.",
-           "next":"jar_choice"
-        },
-        {
-           "text":"He shall construct pipes from sewn animal hides to carry water to pits dug in the desert sands",
-           "next":"optimal_pipes"
-        }
+   },
+   "jar_choice": {
+     "text": "An interesting tale has come down to us of how water was supplied to the Sinai region in years following the Persian invasion. Earthen jars full of wine are brought to Egypt from Greece and Phoenice besides: yet there is not to be seen, so to say, one single wine jar lying anywhere in the country. What then (one may ask) becomes of them?",
+     "choices": [
+       {
+         "text": "Next",
+         "next": "next_d"
+       }
      ]
-  },
-  "jar_choice":{
-     "text":"An interesting tale has come down to us of how water was supplied to the Sinai region in years following the Persian invasion. Earthen jars full of wine are brought to Egypt from Greece and Phoenice besides: yet there is not to be seen, so to say, one single wine jar lying anywhere in the country. What then (one may ask) becomes of them?",
-     "choices":[
-        {
-           "text":"Next",
-           "next":"next_d"
-        }
+   },
+   "next_d": {
+     "text": "It's told that each governor of a district must gather in all the earhen pots from his own township and take them to Memphis, and the people of Memphis must fill them with water and carry them to those waterless lands of Syria; so the earthen pottery that is brought to Egypt and sold there is carried to Syria to join the stock whence it came. And in this way, a reliable supply of water is provisioned to the region.",
+     "choices": [
+       {
+         "text": "Next",
+         "next": "next_e"
+       }
      ]
-  },
-  "next_d":{
-     "text":"It's told that each governor of a district must gather in all the earhen pots from his own township and take them to Memphis, and the people of Memphis must fill them with water and carry them to those waterless lands of Syria; so the earthen pottery that is brought to Egypt and sold there is carried to Syria to join the stock whence it came. And in this way, a reliable supply of water is provisioned to the region.",
-     "choices":[
-        {
-           "text":"Next",
-           "next":"next_e"
-        }
+   },
+   "next_e": {
+     "text": "However, this system of water provision was not devised until some years after Cambyses' invasion of Egypt. As such, for our Arabian king, the task proves futile as there are not enough jars available to sufficiently supply the Persian army. And without ample water, the Cambyses fails to lead his army across the desert. The army must ultimately turn back to Persia, with those who do not succumb to thirst and dehydration being countable amongst the fortunate. "
+   },
+   "optimal_camels": {
+     "text": "Having so burdened the camels, the Arabian king drove the animals into the waterless land and there awaited Cambyses' army. In this way, the Arabian king had kept his word and the supply of water was assured. Having successfully crossed the desert, the Persian army proceeded to march on Egypt.",
+     "choices": []
+   },
+   "optimal_pipes": {
+     "text": "By some it has been told that the Arabians did indeed carry water by duct of sewn ox-hides and other hides of a length sufficient to reach to the dry country; and that great tanks were dug to recieve and keep the water. In this way, the Arabian king kept his word; and the Persian army marched securely through the desert and onward to Egypt.",
+     "choices": []
+   },
+   "track_b": {
+     "text": "As the Persian army prepares to march into the desert, the critical matter of provisioning sufficient water remains a top priority. How shall Cambyses provision water for the army for the desert crossing?",
+     "choices": [
+       {
+         "text": "Cambyses shall send scouts ahead of his army to scourer the land for any oases, streams, or other natural freshwater sources.",
+         "next": "oasis_choice_b"
+       },
+       {
+         "text": "Cambyses shall proceed onward into the desert, but shall proceed slowly, stopping to dig wells along the way",
+         "next": "well_choice_b"
+       }
      ]
-  },
-  "next_e":{
-     "text":"However, this system of water provision was not devised until some years after Cambyses' invasion of Egypt. As such, for our Arabian king, the task proves futile as there are not enough jars available to sufficiently supply the Persian army. And without ample water, the Cambyses fails to lead his army across the desert. The army must ultimately turn back to Persia, with those who do not succumb to thirst and dehydration being countable amongst the fortunate. "
-  },
-  "optimal_camels":{
-     "text":"Having so burdened the camels, the Arabian king drove the animals into the waterless land and there awaited Cambyses' army. In this way, the Arabian king had kept his word and the supply of water was assured. Having successfully crossed the desert, the Persian army proceeded to march on Egypt.",
-     "choices":[
-        
-     ]
-  },
-  "optimal_pipes":{
-     "text":"By some it has been told that the Arabians did indeed carry water by duct of sewn ox-hides and other hides of a length sufficient to reach to the dry country; and that great tanks were dug to recieve and keep the water. In this way, the Arabian king kept his word; and the Persian army marched securely through the desert and onward to Egypt.",
-     "choices":[
-        
-     ]
-  },
-  "track_b":{
-     "text":"As the Persian army prepares to march into the desert, the critical matter of provisioning sufficient water remains a top priority. How shall Cambyses provision water for the army for the desert crossing?",
-     "choices":[
-        {
-           "text":"Cambyses shall send scouts ahead of his army to scourer the land for any oases, streams, or other natural freshwater sources.",
-           "next":"oasis_choice_b"
-        },
-        {
-           "text":"Cambyses shall proceed onward into the desert, but shall proceed slowly, stopping to dig wells along the way",
-           "next":"well_choice_b"
-        }
-     ]
-  },
-  "oasis_choice_b":{
-     "text":"The scouting parties venture forth into the scorching desert, with orders to return once they have discovered sufficient sources of water for the army. Unfortunately for Cambyses and his expedition to egypt, their efforts are mostly in vain and few so much as make it back alive.",
-     "choices":[
-        
-     ]
-  },
-  "well_choice_b":{
-     "text":"Cambyses' soldiers are well disciplined and highly motivated, and they take to labors of excavating wells in the desert with utmost vigor and enthusiasm. However, the Sinai desert is particularly dry and the going is tough. To worsen matters, his scouting parties are continually harrassed by Arabian tribesmen. In the end, he must abandon his project and return to Persia.",
-     "choices":[
-        
-     ]
-  }
-}
+   },
+   "oasis_choice_b": {
+     "text": "The scouting parties venture forth into the scorching desert, with orders to return once they have discovered sufficient sources of water for the army. Unfortunately for Cambyses and his expedition to egypt, their efforts are mostly in vain and few so much as make it back alive.",
+     "choices": []
+   },
+   "well_choice_b": {
+     "text": "Cambyses' soldiers are well disciplined and highly motivated, and they take to labors of excavating wells in the desert with utmost vigor and enthusiasm. However, the Sinai desert is particularly dry and the going is tough. To worsen matters, his scouting parties are continually harrassed by Arabian tribesmen. In the end, he must abandon his project and return to Persia.",
+     "choices": []
+   }
+ }
