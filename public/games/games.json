@@ -11,19 +11,14 @@
       "description": "Cool description goes here!"
     },
     {
-      "id": "the_rise_of_darius_the_great",
-      "name": "The Rise of Darius the Great",
-      "description": "The Rise of Darius the Great - 522 BC. You are Oebares, servant to Darius. After a rebellion against the mad ruler Cambyses II, seven candidates, including Darius, meet in a council to decide who will be the next king. Can you help Darius win the thrown?"
-    },
-    {
       "id": "amasis_in_a_bind",
       "name": "Amasis in a bind",
-      "description": "The year is 525 BC and Cambyses II--son of Cyrus the Great--is now the Second King of the Persian Achaemenid Empire."
+      "description": "The year is 525 BC and Amasis II is the ruler in Egypt, when he recieves a troubling herald from, Cambyses II king of the mighty Persian Empire."
     },
     {
       "id": "into_the_sinai_desert",
       "name": "Into the Sinai Desert",
-      "description": "Cambyses"
+      "description": "After being decieved by Amasis II, Cambyses II resolves to invade Egypt"
     }
   ]
 }
