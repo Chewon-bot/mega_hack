@@ -1,6 +1,6 @@
 {
     "start": {
-      "text": "",
+      "text": "Words go here soon",
       "choices": [
         {
           "text": "",
@@ -9,28 +9,11 @@
       ]
     },
     "next_a": {
-      "text": "Amasis finds himself in quite a bind. Amasis is sorely afraid of the power of Persia. At the same time, he knows full well that Cambyses would make his daughter not his queen but his mistress. As such he finds he can neither give his daughter nor deny her.",
+      "text": "",
       "choices": [
         {
-          "text": "Proceed",
-          "next": "next_b"
-        }
-      ]
-    },
-    "next_b": {
-      "text": "What is Amasis to do?",
-      "choices": [
-        {
-          "text": "Submit to the request and send his daughter off to Persia to be married to Cambyses",
-          "next": "submission_choice"
-        },
-        {
-          "text": "Find a stand-in to disguise as his daughter and attempt to fool Cambyses",
-          "next": "optimal_choice"
-        },
-        {
-          "text": "Have the herald killed and his head returned to Cambyses",
-          "next": "bold_choice"
+          "text": "",
+          "next": ""
         }
       ]
     }
