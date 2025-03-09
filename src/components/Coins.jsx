@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types'
-import coin from '../assets/coin.png'
+import Coin from '../assets/coin.png'
 import './Coins.css'
 
 const Coins = ({ coins }) => {
   const coinImages = Array.from({ length: coins }, (_, index) => (
     <img
       key={index}
-      src={coin}
+      src={Coin}
       alt="coin"
       className="coin"
       style={{

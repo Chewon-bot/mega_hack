@@ -4,7 +4,7 @@ import Loading from '../components/Loading.jsx'
 import Coins from '../components/Coins.jsx'
 import './Game.css'
 import { validateProgress } from '../utils/game_validators.js'
-import backgroundMusic from '../assets/background_music.mp3'
+import BackgroundMusic from '../assets/background_music.mp3'
 
 const Game = () => {
   const { gameId } = useParams()
@@ -15,7 +15,7 @@ const Game = () => {
   const navigate = useNavigate()
   const [menuVisible, setMenuVisible] = useState(false)
   const [coins, setCoins] = useState(0)
-  const musicAudioElement = useRef(new Audio(backgroundMusic))
+  const musicAudioElement = useRef(new Audio(BackgroundMusic))
   const [musicOn, setMusicOn] = useState(false)
 
   const getGameProgressKey = (gameId) => `game_progress_${gameId}`
