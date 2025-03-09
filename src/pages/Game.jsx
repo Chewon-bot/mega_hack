@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useLocation, useParams, useNavigate } from 'react-router-dom'
 import Loading from '../components/Loading.jsx'
 import './Game.css'
+import { validateProgress } from '../utils/game_validators.js'
 
 const Game = () => {
   const { gameId } = useParams()
@@ -10,6 +11,9 @@ const Game = () => {
   const [history, setHistory] = useState([])
   const location = useLocation()
   const navigate = useNavigate()
+  const [menuVisible, setMenuVisible] = useState(false)
+
+  const getGameProgressKey = (gameId) => `game_progress_${gameId}`
 
   useEffect(() => {
     const loadGame = async () => {
@@ -17,7 +21,7 @@ const Game = () => {
         const response = await fetch(`/games/${gameId}.json`)
         const data = await response.json()
         setGame(data)
-        setCurrentNode(data.start)
+        setCurrentNode("start")
       } catch (error) {
         console.error('Error loading the game:', error)
       }
@@ -26,16 +30,14 @@ const Game = () => {
     loadGame()
   }, [gameId])
 
-  if (!currentNode) {
-    return <Loading />
-  }
-
   const handleChoice = (nextNode) => {
     if (game && game[nextNode]) {
       setHistory((prevHistory) => {
-        return [...prevHistory, currentNode]
+        const newHistory = [...prevHistory, currentNode]
+        localStorage.setItem(getGameProgressKey(gameId), JSON.stringify(newHistory.concat(nextNode)))
+        return newHistory
       })
-      setCurrentNode(game[nextNode])
+      setCurrentNode(nextNode)
     }
   }
 
@@ -43,6 +45,11 @@ const Game = () => {
     if (history.length > 0) {
       const previousNode = history[history.length - 1]
       setHistory((prevHistory) => {
+        if (prevHistory.length > 1) {
+          localStorage.setItem(getGameProgressKey(gameId), JSON.stringify(prevHistory))
+        } else {
+          localStorage.removeItem(getGameProgressKey(gameId))
+        }
         return prevHistory.slice(0, -1)
       })
       setCurrentNode(previousNode)
@@ -51,16 +58,59 @@ const Game = () => {
 
   const goToMainPage = () => navigate('/')
 
+  const toggleMenu = (event) => {
+    event.stopPropagation()
+    setMenuVisible((prevState) => !prevState)
+  }
+
+  const loadProgress = () => {
+    const progressString = localStorage.getItem(getGameProgressKey(gameId))
+    if (!progressString || progressString.length === 0) {
+      return
+    }
+    try {
+      const progress = JSON.parse(progressString)
+      if (validateProgress(game, progress)) {
+        setCurrentNode(progress[progress.length - 1])
+        setHistory(progress.slice(0, -1))
+      } else {
+        localStorage.removeItem(getGameProgressKey(gameId))
+      }
+    } catch (error) {
+      console.error('Error loading progress:', error)
+      localStorage.removeItem(getGameProgressKey(gameId))
+    }
+  }
+
+  const canLoadProgress = localStorage.getItem(getGameProgressKey(gameId)) !== null
+
+  if (!currentNode) {
+    return <Loading />
+  }
+
   return (
-    <div className="game-container">
-      <div className="title-container">
-        <h2 className="game-title">{location.state.gameName || 'Text-Based Adventure'}</h2>
-        <button className="back_button" onClick={goToMainPage}>Home</button>
+    <div className="game-container" onClick={() => {setMenuVisible(false)}}>
+      <div className="menu-container">
+        <button className="menu-button" onClick={toggleMenu}>Menu</button>
+        {menuVisible && (
+          <div className="menu-box">
+            <button className="menu-item" onClick={goToMainPage}>Main Page</button>
+            <button
+              className={`menu-item ${!canLoadProgress ? 'disabled' : ''}`}
+              disabled={!canLoadProgress}
+              onClick={loadProgress}
+            >
+              Load progress
+            </button>
+            <button className="menu-item">Music on/off</button>
+          </div>
+        )}
       </div>
-      <p className="game-text">{currentNode.text}</p>
-      {currentNode.choices.length > 0 ? (
+      <h2 className="game-title">{location.state.gameName || 'Text-Based Adventure'}</h2>
+      <p className="game-text">{game[currentNode].text}</p>
+      {game[currentNode].choices.length > 0 ? (
         <ul className="choice-list">
-          {currentNode.choices.map((choice, index) => (
+          {game[currentNode].choices.map((choice, index) => (
             <li key={index}>
               <button className="choice-button" onClick={() => handleChoice(choice.next)}>
                 {choice.text}
