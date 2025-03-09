@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useLocation, useParams, useNavigate } from 'react-router-dom'
 import Loading from '../components/Loading.jsx'
 import Coins from '../components/Coins.jsx'
 import './Game.css'
 import { validateProgress } from '../utils/game_validators.js'
+import backgroundMusic from '../assets/background_music.mp3'
 
 const Game = () => {
   const { gameId } = useParams()
@@ -14,6 +15,8 @@ const Game = () => {
   const navigate = useNavigate()
   const [menuVisible, setMenuVisible] = useState(false)
   const [coins, setCoins] = useState(0)
+  const musicAudioElement = useRef(new Audio(backgroundMusic))
+  const [musicOn, setMusicOn] = useState(false)
 
   const getGameProgressKey = (gameId) => `game_progress_${gameId}`
 
@@ -31,6 +34,22 @@ const Game = () => {
 
     loadGame()
   }, [gameId])
+
+  useEffect(() => {
+    const audioElement = musicAudioElement.current
+    if (musicOn) {
+      try {
+        audioElement.loop = true
+        audioElement.play()
+      } catch (error) {
+        console.error('Error playing music:', error)
+      }
+    }
+
+    return () => {
+      audioElement.pause()
+    }
+  }, [musicOn])
 
   const handleChoice = (nextNode) => {
     if (game && game[nextNode]) {
@@ -94,6 +113,8 @@ const Game = () => {
     }
   }
 
+  const toggleMusic = () => setMusicOn((prevState) => !prevState)
+
   const canLoadProgress = localStorage.getItem(getGameProgressKey(gameId)) !== null
 
   if (!currentNode) {
@@ -114,7 +135,7 @@ const Game = () => {
             >
               Load progress
             </button>
-            <button className="menu-item">Music on/off</button>
+            <button className="menu-item" onClick={toggleMusic}>{musicOn ? 'Music Off' : 'Music On'}</button>
           </div>
         )}
       </div>
