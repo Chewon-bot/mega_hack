@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useLocation, useParams, useNavigate } from 'react-router-dom'
+import Loading from '../components/Loading.jsx'
 import './Game.css'
 
 const Game = () => {
@@ -26,7 +27,7 @@ const Game = () => {
   }, [gameId])
 
   if (!currentNode) {
-    return <p>Loading...</p>
+    return <Loading />
   }
 
   const handleChoice = (nextNode) => {
@@ -48,13 +49,13 @@ const Game = () => {
     }
   }
 
+  const goToMainPage = () => navigate('/')
+
   return (
     <div className="game-container">
       <div className="title-container">
         <h2 className="game-title">{location.state.gameName || 'Text-Based Adventure'}</h2>
-        <button className="back_button" onClick={() => navigate('/')}>
-          Home
-        </button>
+        <button className="back_button" onClick={goToMainPage}>Home</button>
       </div>
       <p className="game-text">{currentNode.text}</p>
       {currentNode.choices.length > 0 ? (
@@ -70,9 +71,7 @@ const Game = () => {
       ) : (
         <p className="game-end">The End.</p>
       )}
-      {history.length > 0 && (
-        <button className="back-button" onClick={handleBack}>Back</button>
-      )}
+      <button className="back-button" onClick={history.length > 0 ? handleBack : goToMainPage}>Back</button>
     </div>
   )
 }
