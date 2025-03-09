@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useLocation, useParams, useNavigate } from 'react-router-dom'
 import Loading from '../components/Loading.jsx'
+import Coins from '../components/Coins.jsx'
 import './Game.css'
 import { validateProgress } from '../utils/game_validators.js'
 
@@ -12,6 +13,7 @@ const Game = () => {
   const location = useLocation()
   const navigate = useNavigate()
   const [menuVisible, setMenuVisible] = useState(false)
+  const [coins, setCoins] = useState(0)
 
   const getGameProgressKey = (gameId) => `game_progress_${gameId}`
 
@@ -37,6 +39,9 @@ const Game = () => {
         localStorage.setItem(getGameProgressKey(gameId), JSON.stringify(newHistory.concat(nextNode)))
         return newHistory
       })
+      setCoins((prevState) => {
+        return prevState + (game[nextNode].coins ?? 0)
+      })
       setCurrentNode(nextNode)
     }
   }
@@ -52,6 +57,11 @@ const Game = () => {
         }
         return prevHistory.slice(0, -1)
       })
+      if (currentNode) {
+        setCoins((prevState) => {
+          return prevState - (game[currentNode].coins ?? 0)
+        })
+      }
       setCurrentNode(previousNode)
     }
   }
@@ -70,9 +80,11 @@ const Game = () => {
     }
     try {
       const progress = JSON.parse(progressString)
-      if (validateProgress(game, progress)) {
+      const earnedCoins = validateProgress(game, progress)
+      if (earnedCoins !== null) {
         setCurrentNode(progress[progress.length - 1])
         setHistory(progress.slice(0, -1))
+        setCoins(earnedCoins)
       } else {
         localStorage.removeItem(getGameProgressKey(gameId))
       }
@@ -107,6 +119,7 @@ const Game = () => {
         )}
       </div>
       <h2 className="game-title">{location.state.gameName || 'Text-Based Adventure'}</h2>
+      <Coins coins={Math.max(0, coins)} />
       <p className="game-text">{game[currentNode].text}</p>
       {game[currentNode].choices.length > 0 ? (
         <ul className="choice-list">

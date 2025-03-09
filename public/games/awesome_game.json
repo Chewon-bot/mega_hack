@@ -23,7 +23,8 @@
         "text": "Run in the opposite direction.",
         "next": "run_away"
       }
-    ]
+    ],
+    "coins": 3
   },
   "stay_put": {
     "text": "You decide to stay put. The rustling grows louder, and a pair of glowing eyes peer at you from the darkness.",
@@ -36,22 +37,27 @@
         "text": "Try to hide.",
         "next": "hide"
       }
-    ]
+    ],
+    "coins": 1
   },
   "shadow_response": {
     "text": "A voice whispers back, 'Who goes there?' You realize you're not alone.",
-    "choices": []
+    "choices": [],
+    "coins": 1
   },
   "run_away": {
     "text": "You dash through the forest, branches clawing at your clothes. You stumble and fall.",
-    "choices": []
+    "choices": [],
+    "coins": 4
   },
   "stand_ground": {
     "text": "The eyes inch closer, and you realize it's a lost traveler, just like you.",
-    "choices": []
+    "choices": [],
+    "coins": 2
   },
   "hide": {
     "text": "You crouch behind a fallen tree, holding your breath. The glowing eyes disappear into the mist.",
-    "choices": []
+    "choices": [],
+    "coins": 2
   }
 }
