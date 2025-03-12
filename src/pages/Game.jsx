@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLocation, useParams, useNavigate } from 'react-router-dom'
-import Loading from '../components/Loading.jsx'
 import Coins from '../components/Coins.jsx'
 import './Game.css'
 import { validateProgress } from '../utils/game_validators.js'
@@ -118,7 +117,7 @@ const Game = () => {
   const canLoadProgress = localStorage.getItem(getGameProgressKey(gameId)) !== null
 
   if (!currentNode) {
-    return <Loading />
+    return <></>
   }
 
   return (
