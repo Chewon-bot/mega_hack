@@ -137,7 +137,8 @@
   },
   "optimal_pipes": {
     "text": "By some it has been told that the Arabians did indeed carry water by duct of sewn ox-hides and other hides of a length sufficient to reach to the dry country; and that great tanks were dug to recieve and keep the water. In this way, the Arabian king kept his word; and the Persian army marched securely through the desert and onward to Egypt.",
-    "choices": []
+    "choices": [],
+    "coins": 1
   },
   "track_b": {
     "text": "As the Persian army prepares to march into the desert, the critical matter of provisioning sufficient water remains a top priority. How shall Cambyses provision water for the army for the desert crossing?",
