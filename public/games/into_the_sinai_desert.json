@@ -44,7 +44,8 @@
         "text": "Turn Phanes away: Phanes' loyalty is questionable. It would be wiser not to trust him.",
         "next": "track_b"
       }
-    ]
+    ],
+    "coins": 1
   },
   "phanes_optimal": {
     "text": "Phanes advises Cambyses to seek safe passage from the king of the Arabian tribes who occupy the region. This is a risky idea, as it means trusting these tribes with the fate of his entire army. And what of Phanes? Are his motives pure?",
@@ -87,7 +88,8 @@
         "text": "Proceed",
         "next": "next_c"
       }
-    ]
+    ],
+    "coins": 1
   },
   "next_c": {
     "text": "Now, consider the task of the Arabian king. Just how do you suppose he might supply the water, and thereby fulfill his pledge to Cambyses?",
@@ -130,7 +132,8 @@
   },
   "optimal_camels": {
     "text": "Having so burdened the camels, the Arabian king drove the animals into the waterless land and there awaited Cambyses' army. In this way, the Arabian king had kept his word and the supply of water was assured. Having successfully crossed the desert, the Persian army proceeded to march on Egypt.",
-    "choices": []
+    "choices": [],
+    "coins": 1
   },
   "optimal_pipes": {
     "text": "By some it has been told that the Arabians did indeed carry water by duct of sewn ox-hides and other hides of a length sufficient to reach to the dry country; and that great tanks were dug to recieve and keep the water. In this way, the Arabian king kept his word; and the Persian army marched securely through the desert and onward to Egypt.",
