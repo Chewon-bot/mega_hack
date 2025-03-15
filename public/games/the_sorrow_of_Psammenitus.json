@@ -36,7 +36,8 @@
   },
   "bold_choice": {
     "text": "You chose to focus on your own momentary feelings instead of thinking of the consequence of your actions, forgetting that you were a king. You felt good, but Cambyses is enraged: he proceeds to kill all of your family in front of you, and then executes you in the end.",
-    "choices": []
+    "choices": [],
+    "coins": 0
   },
   "optimal_choice": {
     "text": "You chose endurance. It is no good to provoke Cambyses at this point. As you complied to the situation, Cambyses starts to think that you might have no courage to seek revenge for him.",
@@ -45,11 +46,13 @@
         "text": "Next",
         "next": "next_c"
       }
-    ]
+    ],
+    "coins": 1
   },
   "submission_choice": {
     "text": "You are overwhelmed by your emotions, and cried out loud. Maybe it relieved your daughter. But now, Cambyses knows that your weakness is your daughter. And he also realizes that you are in so much grief that you must try to seek revenge against him. He might also be intrigued by your pain, which is not a good sign. He eventually kills you before you take any actions.",
-    "choices": []
+    "choices": [],
+    "coins": 0
   },
   "next_c": {
     "text": "Then, Cambyses sent out the king's son, along with two thousand other Egyptians of the same age group, to be executed for the price of the blood of the truce ship. Watching the scene, Psammenitus notices that his son was being taken to death.",
@@ -79,7 +82,8 @@
   },
   "bold_choice_2": {
     "text": "You chose to focus on your own momentary feelings instead of thinking of the consequence of your actions, forgetting that you were a king. You felt good, but Cambyses is enraged: he proceeds to kill all of your family in front of you, and then executes you in the end.",
-    "choices": []
+    "choices": [],
+    "coins": 0
   },
   "optimal_choice_2": {
     "text": "You chose endurance. It is no good to provoke Cambyses at this point. As you complied to the situation, Cambyses starts to think that you might have no courage to seek revenge for him.",
@@ -88,11 +92,13 @@
         "text": "Next",
         "next": "next_c"
       }
-    ]
+    ],
+    "coins": 1
   },
   "submission_choice_2": {
     "text": "You are overwhelmed by your emotions, and cried out loud. Maybe it relieved your daughter. But now, Cambyses knows that your weakness is your daughter. And he also realizes that you are in so much grief that you must try to seek revenge against him. He might also be intrigued by your pain, which is not a good sign. He eventually kills you before you take any actions.",
-    "choices": []
+    "choices": [],
+    "coins": 0
   },
   "next_e": {
     "text": "It was these words and this reason which sparked in Cambyses such great anger as to compel him to invade Egypt.",
