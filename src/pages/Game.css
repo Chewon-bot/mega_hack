@@ -1,3 +1,7 @@
+body {
+  background-color: #A69B8D;
+}
+
 .game-container {
   display: flex;
   flex-direction: column;
@@ -6,7 +10,8 @@
   max-width: 800px;
   margin: 50px auto 40px;
   padding: 30px 30px;
-  background: #A69B8D;
+  background: #bfb7a8c0;
+  /* #A69B8D; */
   /* #bfb7a8c0; */
   /* rgba(0, 0, 0, 0.85); */
   border-radius: 100px;
