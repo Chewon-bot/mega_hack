@@ -121,7 +121,7 @@ const Game = () => {
   }
 
   return (
-    <div className="game-container" onClick={() => {setMenuVisible(false)}}>
+    <div className="game-container" onClick={() => { setMenuVisible(false) }}>
       <div className="menu-container">
         <button className="menu-button" onClick={toggleMenu}>Menu</button>
         {menuVisible && (
