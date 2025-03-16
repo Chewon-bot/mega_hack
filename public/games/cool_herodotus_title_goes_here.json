@@ -1,0 +1,368 @@
+{
+  "start": {
+    "text": "Cambyses II, King of the Persians, has just dispatched a herald to Egypt with a peculiar message for Amasis, King of the Egyptians. Cambyses has requested the hand of Amasis' daughter in marriage. Amasis finds himself in quite a bind.  Amasis is sorely afraid of the power of Persia. At the same time, he knows full well that Cambyses would make her not his queen but his mistress. As such he finds he can neither give his daughter nor deny her.",
+    "choices": [
+      {
+        "text": "Proceed",
+        "next": "next_a"
+      }
+    ]
+  },
+  "next_a": {
+    "text": "Amasis, king of the Egyptians, finds himself in quite a bind. Amasis is sorely afraid of the power of Persia. At the same time, he knows full well that Cambyses would make his daughter not his queen but his mistress. As such he finds he can neither give his daughter nor deny her.",
+    "choices": [
+      {
+        "text": "Proceed",
+        "next": "next_b"
+      }
+    ]
+  },
+  "next_b": {
+    "text": "What is Amasis to do?",
+    "choices": [
+      {
+        "text": "Submit to the request and send his daughter off to Persia to be married to Cambyses",
+        "next": "submission_choice"
+      },
+      {
+        "text": "Find a stand-in to disguise as his daughter and attempt to fool Cambyses",
+        "next": "optimal_choice"
+      },
+      {
+        "text": "Have the herald killed and his head returned to Cambyses",
+        "next": "bold_choice"
+      }
+    ]
+  },
+  "submission_choice": {
+    "text": "You opted for the path of appeasement in search of an easy way out. You chose to compromise on your morales in the vain hope that you might preserve you status. In the end, you lose both. Cambyses proceeds with his invasion, the kingdom collapses, and Amasis is granted no reprieve. And what became of his daughter? That much we will never know.",
+    "choices": []
+  },
+  "optimal_choice": {
+    "text": "Reasoning that he could neither send his daughter nor refuse Cambyses, Amasis bethought himself of a very tall and fair damsel called Nitetis, daughter of the former king Apries, and all that was left of that family. He decked her out with raiment and golden ornaments and sent her to the Persians as if she were his own daughter.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_c"
+      }
+    ],
+    "coins": 1
+  },
+  "bold_choice": {
+    "text": "You made a bold move, and an uncompromising move at that. You upheld your morale fortitude and defended your daughter's honor. Unfortunately, it was also one of the last decisions Amasis would make. When Cambyses received the remains of his herald he was furious and marched directly on Egypt. When Amasis was finally delivered to the Persian King, he was treated so harshly as to defy description.",
+    "choices": []
+  },
+  "next_c": {
+    "text": "After a while, the king greeting her as the daughter of Amasis, the damsel said, 'King, you know not how Amasis has decieved you: he decked me out with ornaments and sent me to you to pass for his own daughter; but I am in truth the daughter of his master Apries, whom he and other Egyptians rebelled against and slew.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "invade_egypt"
+      }
+    ]
+  },
+  "invade_egypt": {
+    "text": "It was these words and this reason which sparked in Cambyses such great anger as to compel him to invade Egypt.",
+    "choices": [
+      {
+        "text": "Proceed",
+        "next": "egypt_invasion"
+      }
+    ]
+  },
+  "egypt_invasion": {
+    "text": "Enraged at Amasis's deception in sending Nitetis, daughter of the former king Apries--disguised as Amasis' own daughter--Cambyses II now resolves to invade Egypt. However, to get to Egypt, the Persian army must embark on a difficult journey, which includes crossing the Sinai desert.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_a_file2"
+      }
+    ]
+  },
+  "next_a_file2": {
+    "text": "Having reached the edge of the Sinai Desert, what is Cambyses to do?",
+    "choices": [
+      {
+        "text": "Considering the urgency of the situation and the dangers of delay, Cambyses shall proceed in due haste, while his provisions are still ample.",
+        "next": "thirsty_choice"
+      },
+      {
+        "text": "Cambyses shall pause at the desert's edge, but only for so long as it will take to ensure he has obtained as much provisions as his men and animals can carry",
+        "next": "provision_choice"
+      },
+      {
+        "text": "Cambyses shall not proceed without a solid plan. He shall therefore make camp and call a counsel of his advisors",
+        "next": "optimal_council"
+      }
+    ]
+  },
+  "thirsty_choice": {
+    "text": "The Persian army marches valiantly into the Sinai desert, but the task at hand demands more provisions than just that which they can carry. As they march, their supplies dwindle. The resulting shortage of food is a hardship, but it is the lack of water that is the real killer. Eventually, the army must turn back and those who make it back to Persia are among the fortunate.",
+    "choices": []
+  },
+  "provision_choice": {
+    "text": "While it is a wise choice to consolidate resources prior to marching into the desert, the army is still constrained by how much supplies they can cary, and this proves inadequate to the task at hand. With supplies running out, the army must turn back to Persia, so as to avert further disaster.",
+    "choices": []
+  },
+  "optimal_council": {
+    "text": "There was one interesting character, by the name of Phanes, lingering at the vicinity where Cambyses' called the meeting of his advisory council. This man, Phanes, was a Greek mercenary who had come from Egypt claiming to be harboring a personal grudge against Amasis. He further claims to know a way for the army to cross the desert. Is Cambyses to stake the fate of his army on the advice of this unknown new arrival from Egypt?",
+    "choices": [
+      {
+        "text": "Hear Phanes out: His familiarity wih the desert could be useful",
+        "next": "phanes_optimal"
+      },
+      {
+        "text": "Turn Phanes away: Phanes' loyalty is questionable. It would be wiser not to trust him.",
+        "next": "track_b"
+      }
+    ],
+    "coins": 1
+  },
+  "phanes_optimal": {
+    "text": "Phanes advises Cambyses to seek safe passage from the king of the Arabian tribes who occupy the region. This is a risky idea, as it means trusting these tribes with the fate of his entire army. And what of Phanes? Are his motives pure?",
+    "choices": [
+      {
+        "text": "Proceed",
+        "next": "next_b_file2"
+      }
+    ]
+  },
+  "next_b_file2": {
+    "text": "How shall Cambyses proceed given the critical supply needs for surviving in the desert? Shall he trust the word of the Arabian king? Or choose a different path?",
+    "choices": [
+      {
+        "text": "Cambyses shall send scouts ahead of his army to scourer the land for any oases, streams, or other natural freshwater sources.",
+        "next": "oasis_choice"
+      },
+      {
+        "text": "Cambyses shall proceed onward into the desert, but shall proceed slowly, stopping to dig wells along the way",
+        "next": "well_choice"
+      },
+      {
+        "text": "Cambyses shall trust the Arabian king to secure the provision of water for his army",
+        "next": "optimal_arabians"
+      }
+    ]
+  },
+  "oasis_choice": {
+    "text": "The scouting parties venture forth into the scorching desert, with orders to return once they have discovered sufficient sources of water for the army. Unfortunately for Cambyses and his expedition to egypt, their efforts are mostly in vain and few so much as make it back alive.",
+    "choices": []
+  },
+  "well_choice": {
+    "text": "Cambyses' soldiers are well disciplined and highly motivated, and they take to labors of excavating wells in the desert with utmost vigor and enthusiasm. However, the Sinai desert is particularly dry and the going is tough. To worsen matters, his scouting parties are continually harrassed by Arabian tribesmen. In the end, he must abandon his project and return to Persia.",
+    "choices": []
+  },
+  "optimal_arabians": {
+    "text": "Now, there are no men who respect pledges more than the Arabians. Still, supplying enough water for the Persian army was nevetheless a uniquely challenging task. So just how was the Arabian king to achieve this objective?",
+    "choices": [
+      {
+        "text": "Proceed",
+        "next": "next_c_file2"
+      }
+    ],
+    "coins": 1
+  },
+  "next_c_file2": {
+    "text": "Now, consider the task of the Arabian king. Just how do you suppose he might supply the water, and thereby fulfill his pledge to Cambyses?",
+    "choices": [
+      {
+        "text": "He shall fill camel-skin water bags and load these onto camels.",
+        "next": "optimal_camels"
+      },
+      {
+        "text": "He shall collect clay jars of the sort used for transporting wine throughout the region. He shall then fill these with water and store them in the desert.",
+        "next": "jar_choice"
+      },
+      {
+        "text": "He shall construct pipes from sewn animal hides to carry water to pits dug in the desert sands",
+        "next": "optimal_pipes"
+      }
+    ]
+  },
+  "jar_choice": {
+    "text": "An interesting tale has come down to us of how water was supplied to this region in years following the Persian invasion. Earthen jars full of wine are brought to Egypt from Greece and Phoenice besides: yet there was not to be seen, so to say, one single wine jar lying anywhere in the country. What then (one may ask) had become of them?",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_d_file2"
+      }
+    ]
+  },
+  "next_d_file2": {
+    "text": "It's told that each governor of a district must gather in all the earhen pots from his own township and take them to Memphis, and the people of Memphis must fill them with water and carry them to those waterless lands of Syria; so the earthen pottery that is brought to Egypt and sold there is carried to Syria to join the stock whence it came. And in this way, a reliable supply of water is provisioned to the region.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_e_file2"
+      }
+    ]
+  },
+  "next_e_file2": {
+    "text": "However, this system of water provision was not devised until some years after Cambyses' invasion of Egypt. As such, for the Arabian king, the task proved futile as there are not enough jars available to sufficiently supply the Persian army. And without ample water, the Cambyses fails to lead his army across the desert. The army must ultimately turn back to Persia, with those who do not succumb to thirst and dehydration being countable amongst the fortunate. ",
+    "choices": []
+  },
+  "optimal_camels": {
+    "text": "Having so burdened the camels, the Arabian king drove the animals into the waterless land and there awaited Cambyses' army. In this way, the Arabian king had kept his word and the supply of water was assured. Having successfully crossed the desert, the Persian army proceeded to march on Egypt.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_a_file3"
+      }
+    ],
+    "coins": 1
+  },
+  "optimal_pipes": {
+    "text": "By some it has been told that the Arabians did indeed carry water by duct of sewn ox-hides and other hides of a length sufficient to reach to the dry country; and that great tanks were dug to recieve and keep the water. In this way, the Arabian king kept his word; and the Persian army marched securely through the desert and onward to Egypt.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_a_file3"
+      }
+    ],
+    "coins": 1
+  },
+  "track_b": {
+    "text": "As the Persian army prepares to march into the desert, the critical matter of provisioning sufficient water remains a top priority. How shall Cambyses provision water for the army for the desert crossing?",
+    "choices": [
+      {
+        "text": "Cambyses shall send scouts ahead of his army to scourer the land for any oases, streams, or other natural freshwater sources.",
+        "next": "oasis_choice_b"
+      },
+      {
+        "text": "Cambyses shall proceed onward into the desert, but shall proceed slowly, stopping to dig wells along the way",
+        "next": "well_choice_b"
+      }
+    ]
+  },
+  "oasis_choice_b": {
+    "text": "The scouting parties venture forth into the scorching desert, with orders to return once they have discovered sufficient sources of water for the army. Unfortunately for Cambyses and his expedition to egypt, their efforts are mostly in vain and few so much as make it back alive.",
+    "choices": []
+  },
+  "well_choice_b": {
+    "text": "Cambyses' soldiers are well disciplined and highly motivated, and they take to labors of excavating wells in the desert with utmost vigor and enthusiasm. However, the Sinai desert is particularly dry and the going is tough. To worsen matters, his scouting parties are continually harrassed by Arabian tribesmen. In the end, he must abandon his project and return to Persia.",
+    "choices": []
+  },
+  "next_a_file3": {
+    "text": "Cambyses invaded Egypt to find Amasis no longer alive. Psammenitus, the son of Amasis, took the throne and waited to fight with Cambyses. The fighting was fierce and losses on both sides were very heavy, but in the end the Egyptians were routed. They fled to Memphis and slaughtered a ship Cambyses sent for truce, resulting themselves in a siege and eventually surrendering.",
+    "choices": [
+      {
+        "text": "Proceed",
+        "next": "next_b_file3"
+      }
+    ]
+  },
+  "next_b_file3": {
+    "text": "Cambyses deliberately tormented the Egyptian king, to test his courage. He had the young daughters of the leading men of Egypt, including the king's own, to dressed as a slave, and get out of the city to fetch water. All the other fathers are crying with their daughters.",
+    "choices": [
+      {
+        "text": "Proceed",
+        "next": "next_c_file3"
+      }
+    ]
+  },
+  "next_c_file3": {
+    "text": "What should Psammenitus do?",
+    "choices": [
+      {
+        "text": "Spit at Cambyses since that is his ultimate wish for his enemy.",
+        "next": "bold_choice_file3"
+      },
+      {
+        "text": "Bow the head to the ground and comply.",
+        "next": "optimal_choice_file3"
+      },
+      {
+        "text": "Cry with his daughter as she is treated badly and he is no longer a king as well.",
+        "next": "submission_choice_file3"
+      }
+    ]
+  },
+  "bold_choice_file3": {
+    "text": "You chose to focus on your own momentary feelings instead of thinking of the consequence of your actions, forgetting that you were a king. You felt good, but Cambyses is enraged: he proceeds to kill all of your family in front of you, and then executes you in the end.",
+    "choices": [],
+    "coins": 0
+  },
+  "optimal_choice_file3": {
+    "text": "You chose endurance. It is no good to provoke Cambyses at this point. As you complied to the situation, Cambyses starts to think that you might have no courage to seek revenge for him.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_d_file3"
+      }
+    ],
+    "coins": 1
+  },
+  "submission_choice_file3": {
+    "text": "You are overwhelmed by your emotions, and cried out loud. Maybe it relieved your daughter. But now, Cambyses knows that your weakness is your daughter. And he also realizes that you are in so much grief that you must try to seek revenge against him. He might also be intrigued by your pain, which is not a good sign. He eventually kills you before you take any actions.",
+    "choices": [],
+    "coins": 0
+  },
+  "next_d_file3": {
+    "text": "Then, Cambyses sent out the king's son, along with two thousand other Egyptians of the same age group, to be executed for the price of the blood of the truce ship. Watching the scene, Psammenitus notices that his son was being taken to death.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_e_file3"
+      }
+    ]
+  },
+  "next_e_file3": {
+    "text": "Psammenitus and the others passed by an elderly man, who had been a frequent guest of him when Psammenitus was a king. This man had lost all his property and been fallen to the status of a beggar, and was begging from the army.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_f"
+      }
+    ]
+  },
+  "next_f": {
+    "text": "What should Psammenitus do?",
+    "choices": [
+      {
+        "text": "Reveal that he is also no longer a king, and blame Cambyses for that.",
+        "next": "bold_choice_3"
+      },
+      {
+        "text": "Show some emotion. Let out a loud groan, call out the friend's name, and strike head in distress.",
+        "next": "optimal_choice_3"
+      },
+      {
+        "text": "Try not to show emotion, and keep quiet. He is unfortuate, but not enough. It is Psammenitus himself that is having the worst day in the world",
+        "next": "submission_choice_3"
+      }
+    ]
+  },
+  "bold_choice_3": {
+    "text": "You chose to focus on your rage. You were blinded by the fate of your children. But your abrupt words did not change anything. You did not care about the consequence of your words, forgetting that you were a king. And Cambyses is enraged: he proceeds to kill all of your family in front of you, and then executes you in the end.",
+    "choices": [],
+    "coins": 0
+  },
+  "optimal_choice_3": {
+    "text": "You chose to show some empathy for your poor friend. Now Cambyses starts to think that you surrendered completely, and he also thinks that you are neither a psychopath nor a liar; Just a poor man that is no longer a king.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_g"
+      }
+    ],
+    "coins": 1
+  },
+  "submission_choice_3": {
+    "text": "Cambyses thinks you are either a liar, or a psychopath. You are not showing basic empathy without a reason. He wonders if you are secretly planning for revenge, and eventually murders you for good.",
+    "choices": [],
+    "coins": 0
+  },
+  "next_g": {
+    "text": "Cambyses was so surprised at Psammenitus' behaviour that he asked Psammenitus, \"Why the sight of your daughter being humiliated and your son being taken to his death did not move you to protests and tears, whereas a beggar who is not related to you at all did receive this mark of respect from you?\" And Psammenitus replied,",
+    "choices": [
+      {
+        "text": "\"My personal troubles are too immense to cry over. But when a friend on the threshold of old age has lost a fortune and happiness, and been reduced to beggary, his sorrow calls for tears.\"",
+        "next": "next_h"
+      }
+    ]
+  },
+  "next_h": {
+    "text": "This reply of Psammenitus' was well received by Cambyses, and brought tears to the eyes of everyone who were there at the time. Cambyses pitied Psammenitus, so he gave the order to rescue Psammenitus's son and to bring Psammenitus to his presence from the outskirts. The people who had gone to fetch Psammenitus' son were too late to save him, but from then on Psammenitus lived an easy life.",
+    "choices": []
+  }
+}

@@ -24,6 +24,11 @@
       "id": "the_sorrow_of_Psammenitus",
       "name": "The Sorrow of Psammenitus",
       "description": "Amasis's son, Psammenitus, endures hardships from Cambyses as a fallen king"
+    },
+    {
+      "id": "cool_herodotus_title_goes_here",
+      "name": "Cool Herodotus Title",
+      "description": "Cool Herodotus description"
     }
   ]
 }
