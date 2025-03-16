@@ -1,24 +1,9 @@
 {
   "games": [
     {
-      "id": "amasis_in_a_bind",
-      "name": "Amasis in a bind",
-      "description": "The year is 525 BC and Amasis II is the ruler in Egypt, when he recieves a troubling herald from, Cambyses II king of the mighty Persian Empire."
-    },
-    {
-      "id": "into_the_sinai_desert",
-      "name": "Into the Sinai Desert",
-      "description": "After being decieved by Amasis II, Cambyses II resolves to invade Egypt"
-    },
-    {
-      "id": "the_sorrow_of_Psammenitus",
-      "name": "The Sorrow of Psammenitus",
-      "description": "Amasis's son, Psammenitus, endures hardships from Cambyses as a fallen king"
-    },
-    {
-      "id": "cool_herodotus_title_goes_here",
-      "name": "Cool Herodotus Title",
-      "description": "Cool Herodotus description"
+      "id": "the_sands_of_time",
+      "name": "The Sands of Time: Cambyses' Egyptian Invasion",
+      "description": "Step into the world of Histories by Herodotus. Set during the Persian invasion of Egypt in the 5th Century BCE, interact with many key historical figures in the unfolding drama."
     }
   ]
 }
