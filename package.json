@@ -10,10 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "prop-types": "^15.8.1",
-=======
->>>>>>> f1347690895613475921eb686a941bd8d4cab328
     "react": "^19.0.0",
     "react-router-dom": "^7.1.5"
   },
