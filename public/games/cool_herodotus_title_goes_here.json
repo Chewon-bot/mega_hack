@@ -307,61 +307,98 @@
     ]
   },
   "next_e_file3": {
-    "text": "Psammenitus and the others passed by an elderly man, who had been a frequent guest of him when Psammenitus was a king. This man had lost all his property and been fallen to the status of a beggar, and was begging from the army.",
-    "choices": [
-      {
-        "text": "Next",
-        "next": "next_f"
-      }
-    ]
-  },
-  "next_f": {
     "text": "What should Psammenitus do?",
     "choices": [
       {
-        "text": "Reveal that he is also no longer a king, and blame Cambyses for that.",
-        "next": "bold_choice_3"
+        "text": "Try to kill Cambyses, and to flee with his son afterwards.",
+        "next": "bold_choice_2_file3"
       },
       {
-        "text": "Show some emotion. Let out a loud groan, call out the friend's name, and strike head in distress.",
-        "next": "optimal_choice_3"
+        "text": "Bow the head to the ground and comply.",
+        "next": "optimal_choice_2_file3"
       },
       {
-        "text": "Try not to show emotion, and keep quiet. He is unfortuate, but not enough. It is Psammenitus himself that is having the worst day in the world",
-        "next": "submission_choice_3"
+        "text": "Weep and wail with the other Egyptians as his son is about to be murdered.",
+        "next": "submission_choice_2_file3"
       }
     ]
   },
-  "bold_choice_3": {
-    "text": "You chose to focus on your rage. You were blinded by the fate of your children. But your abrupt words did not change anything. You did not care about the consequence of your words, forgetting that you were a king. And Cambyses is enraged: he proceeds to kill all of your family in front of you, and then executes you in the end.",
+  "bold_choice_2_file3": {
+    "text": "You chose to focus on your rage. You were too desperate, blinded by the execution of your son. But your abrupt actions did not change anything. You did not care about the consequence of your actions, forgetting that you were a king. Your approach failed, and Cambyses is enraged: he proceeds to kill all of your family in front of you, and then executes you in the end.",
     "choices": [],
     "coins": 0
   },
-  "optimal_choice_3": {
-    "text": "You chose to show some empathy for your poor friend. Now Cambyses starts to think that you surrendered completely, and he also thinks that you are neither a psychopath nor a liar; Just a poor man that is no longer a king.",
+  "optimal_choice_2_file3": {
+    "text": "You chose to calm down. It is no good to provoke Cambyses at this point. You already passed his first test. As you complied to the situation, Cambyses starts to think that you surrendered completely, and you have no courage to seek revenge for him at all.",
     "choices": [
       {
         "text": "Next",
-        "next": "next_g"
+        "next": "next_f_file3"
       }
     ],
     "coins": 1
   },
-  "submission_choice_3": {
+  "submission_choice_2_file3": {
+    "text": "Your son is about to die, and you knew you cannot do anything for him. So your emotions burst out But now, Cambyses knows that your weakness is your son. And he also realizes that you are in so much grief that you must try to seek revenge against him after your son dies. He might also be intrigued by your pain, which is not a good sign. He eventually kills you before you take any actions.",
+    "choices": [],
+    "coins": 0
+  },
+  "next_f_file3": {
+    "text": "Psammenitus and the others passed by an elderly man, who had been a frequent guest of him when Psammenitus was a king. This man had lost all his property and been fallen to the status of a beggar, and was begging from the army.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_g_file3"
+      }
+    ]
+  },
+  "next_g_file3": {
+    "text": "What should Psammenitus do?",
+    "choices": [
+      {
+        "text": "Reveal that he is also no longer a king, and blame Cambyses for that.",
+        "next": "bold_choice_3_file3"
+      },
+      {
+        "text": "Show some emotion. Let out a loud groan, call out the friend's name, and strike head in distress.",
+        "next": "optimal_choice_3_file3"
+      },
+      {
+        "text": "Try not to show emotion, and keep quiet. He is unfortuate, but not enough. It is Psammenitus himself that is having the worst day in the world",
+        "next": "submission_choice_3_file3"
+      }
+    ]
+  },
+  "bold_choice_3_file3": {
+    "text": "You chose to focus on your rage. You were blinded by the fate of your children. But your abrupt words did not change anything. You did not care about the consequence of your words, forgetting that you were a king. And Cambyses is enraged: he proceeds to kill all of your family in front of you, and then executes you in the end.",
+    "choices": [],
+    "coins": 0
+  },
+  "optimal_choice_3_file3": {
+    "text": "You chose to show some empathy for your poor friend. Now Cambyses starts to think that you surrendered completely, and he also thinks that you are neither a psychopath nor a liar; Just a poor man that is no longer a king.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "next_h_file3"
+      }
+    ],
+    "coins": 1
+  },
+  "submission_choice_3_file3": {
     "text": "Cambyses thinks you are either a liar, or a psychopath. You are not showing basic empathy without a reason. He wonders if you are secretly planning for revenge, and eventually murders you for good.",
     "choices": [],
     "coins": 0
   },
-  "next_g": {
+  "next_h_file3": {
     "text": "Cambyses was so surprised at Psammenitus' behaviour that he asked Psammenitus, \"Why the sight of your daughter being humiliated and your son being taken to his death did not move you to protests and tears, whereas a beggar who is not related to you at all did receive this mark of respect from you?\" And Psammenitus replied,",
     "choices": [
       {
         "text": "\"My personal troubles are too immense to cry over. But when a friend on the threshold of old age has lost a fortune and happiness, and been reduced to beggary, his sorrow calls for tears.\"",
-        "next": "next_h"
+        "next": "next_i_file3"
       }
     ]
   },
-  "next_h": {
+  "next_i_file3": {
     "text": "This reply of Psammenitus' was well received by Cambyses, and brought tears to the eyes of everyone who were there at the time. Cambyses pitied Psammenitus, so he gave the order to rescue Psammenitus's son and to bring Psammenitus to his presence from the outskirts. The people who had gone to fetch Psammenitus' son were too late to save him, but from then on Psammenitus lived an easy life.",
     "choices": []
   }
