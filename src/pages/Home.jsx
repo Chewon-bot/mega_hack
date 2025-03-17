@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import './Home.css'
 
 const Home = () => {
@@ -19,9 +20,22 @@ const Home = () => {
     loadGames()
   }, [])
 
+  const full = games.filter((game) => game.full === true)
+  const dev = games.filter((game) => !game.full)
+
+
   return (
     <div className="home-container">
-      <h1 className="home-title">Full Game</h1>
+      <GameList title="Full Game" games={full} />
+      <GameList title="Development files" games={dev} />
+    </div>
+  )
+}
+
+const GameList = ({ title, games }) => {
+  return (
+    <div>
+      <h1 className="home-title">{title}</h1>
       <ul className="game-list">
         {games.map((game) => (
           <li key={game.id}>
@@ -32,8 +46,19 @@ const Home = () => {
           </li>
         ))}
       </ul>
-    </div >
+    </div>
   )
+}
+
+GameList.propTypes = {
+  title: PropTypes.string.isRequired,
+  games: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 }
 
 export default Home
