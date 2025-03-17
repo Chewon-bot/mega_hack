@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <h1 className="home-title">Choose Your Adventure</h1>
+      <h1 className="home-title">Full Game</h1>
       <ul className="game-list">
         {games.map((game) => (
           <li key={game.id}>
