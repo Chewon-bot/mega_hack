@@ -40,11 +40,13 @@
   },
   "saw_nothing": {
     "text": "You made the right choice. It’s hard enough, only to protect what’s in your mouth. You saw nothing on the way, thus you had no reason to be surprised at anything. You finished your tasty meat after you went home.",
-    "choices": []
+    "choices": [],
+    "coins": 1
   },
   "nothing_happens": {
     "text": "You made the right choice. It’s hard enough, only to protect what’s in your mouth. At first, you saw something, but you soon realized that was just a shadow. You had no reason to be surprised at a shadow. You finished your tasty meat after you went home.",
-    "choices": []
+    "choices": [],
+    "coins": 1
   },
   "great_job": {
     "text": "You lost your meat, but there will always be another in the future. You learned now, so maybe next time you won’t lose it. You will be calm and unbothered, and that will let you keep your meat in the future",
