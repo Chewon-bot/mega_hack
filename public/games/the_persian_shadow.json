@@ -113,11 +113,25 @@
       },
       {
         "text": "Turn Phanes away: Phanes' loyalty is questionable. It would be wiser not to trust him.",
-        "next": "track_b"
+        "next": "phanes_fail"
       }
     ],
     "coins": 1
   },
+  "phanes_fail": {
+    "text": "As Cambyses leads his army into the hot Sinai desert, he is flanked by scouting parties which ride out ahead of the main body of the army to fan the desert sands in search of natural sources of fresh water. The army proceeds at a steady pace and with good morale under the difficult conditions, content with the belief that this last big effort represents the final leg of their arduous journey to Egypt.",
+    "choices": [
+      {
+        "text": "Proceed",
+        "next": "desert_thirst"
+      }
+    ]
+   },
+   "desert_thirst": {
+    "text": "Unfortunately for the Cambyses, and especially for his army, the desert proves a most formidable challenge. This desert proves to be particularly dry and baren, and the search parties mostly come back empty handed. As supplies dwindle, the hardships mount until the army eventually begins to shrink away. Finally, Cambyses is left with no other choice then to order the army to retrace its steps back through the desert and to return to Persia.",
+    "choices": []
+   },
+
   "phanes_optimal": {
     "text": "Phanes advises Cambyses to seek safe passage from the king of the Arabian tribes who occupy the region. This is a risky idea, as it means trusting these tribes with the fate of his entire army. And what of Phanes? Are his motives pure?",
     "choices": [
@@ -220,28 +234,7 @@
       }
     ],
     "coins": 1
-  },
-  "track_b": {
-    "text": "As the Persian army prepares to march into the desert, the critical matter of provisioning sufficient water remains a top priority. How shall Cambyses provision water for the army for the desert crossing?",
-    "choices": [
-      {
-        "text": "Cambyses shall send scouts ahead of his army to scourer the land for any oases, streams, or other natural freshwater sources.",
-        "next": "oasis_choice_b"
-      },
-      {
-        "text": "Cambyses shall proceed onward into the desert, but shall proceed slowly, stopping to dig wells along the way",
-        "next": "well_choice_b"
-      }
-    ]
-  },
-  "oasis_choice_b": {
-    "text": "The scouting parties venture forth into the scorching desert, with orders to return once they have discovered sufficient sources of water for the army. Unfortunately for Cambyses and his expedition to egypt, their efforts are mostly in vain and few so much as make it back alive.",
-    "choices": []
-  },
-  "well_choice_b": {
-    "text": "Cambyses' soldiers are well disciplined and highly motivated, and they take to labors of excavating wells in the desert with utmost vigor and enthusiasm. However, the Sinai desert is particularly dry and the going is tough. To worsen matters, his scouting parties are continually harrassed by Arabian tribesmen. In the end, he must abandon his project and return to Persia.",
-    "choices": []
-  },
+    },
   "next_a_file3": {
     "text": "Cambyses invaded Egypt to find Amasis no longer alive. Psammenitus, the son of Amasis, took the throne and waited to fight with Cambyses. The fighting was fierce and losses on both sides were very heavy, but in the end the Egyptians were routed. They fled to Memphis and slaughtered a ship Cambyses sent for truce, resulting themselves in a siege and eventually surrendering.",
     "choices": [
